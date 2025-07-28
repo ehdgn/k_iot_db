@@ -53,7 +53,7 @@ COLLATE = utf8mb4_unicore_c1; # 정렬 방식 (문자열끼리 비교하고 정�
 # in the SCHEMAS list in the sidebar.
 # > DB(스키마)를 지정하지 않으면 테이블 생성 불가!
 # 1) 테이블명 앞에 'DB명.' 첨부
-# 2) 위의 오류 설명처름 SCHEMAS 내에서 원하는 DB 더블 클릭
+# 2) 위의 오류 설명처럼 SCHEMAS 내에서 원하는 DB 더블 클릭
 
 # +) 테이블명 또한 중복될 수 X
 

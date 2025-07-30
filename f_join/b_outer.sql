@@ -27,10 +27,42 @@
     cf) OUTER 키워드 생략 가능 - LEFT JOIN, RIGHT JOIN으로도 사용 가능
 */
 
+# 외부 조인 예제 1 #
+# : 왼쪽 테이블의 모든 레코드와 오른쪽 테이블의 매칭되는 레코드만 포함
+select 
+	M.member_id, M.name, P.product_code, M.area_code
+from 
+	`members` M -- 모두 출력
+	left outer join `purchases` P
+    on M.member_id = P.member_id;
 
+# 외부 조인 예제 2 #
+# : 오른쪽 테이블의 내용을 모두 출력
+select
+	M.member_id, M.name, P.product_code, M.area_code
+from
+	`purchases` P
+    right outer join `members` M
+    on M.member_id = P.member_id;
+    
+# 외부 조인 예제 3 #
+select
+	M.member_id, P.product_code, M.name, M.contact
+from 
+	`members` M -- 기준 테이블
+    left join `purchases` P
+    on M.member_id = P.member_id
+where 
+	P.product_code is null; -- null은 연산 불가
+# 구매 이력이 없는 회원만 출력
 
+# cf) MySQL은 FULL OUTER JOIN 지원 X
+#		> UNION으로 대체
 
-
+## 외부 조인 사용 시 주의점 ###
+# 1) 기준 테이블 위치: LEFT JOIN의 경우 왼쪽 테이블이 기준 (FROM 뒤의 테이블)
+# 2) OUTER 키워드 생략 가능 (LEFT JOIN | RIGHT JOIN)
+# 3) IS NULL 조건: 외부 조인 후 일치하지 않는 데이터를 찾을 때 사용 (차집합)
 
 
 

@@ -190,19 +190,3 @@ where
 
 select curdate();
 select now();
-
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-

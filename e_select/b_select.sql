@@ -74,7 +74,7 @@ select * from `members`; -- 데이터 삽입 순서대로 정렬 (auto_increment
 select * from `members`
 order by
 	join_date; # 과거 순 정렬
-    
+  
 select * from `members`
 order by
 	name desc; # 이름 순 정렬 (내림차순)
@@ -115,36 +115,3 @@ select * from `members`;
 
 select distinct area_code from `members`;
 select distinct grade from `members`;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

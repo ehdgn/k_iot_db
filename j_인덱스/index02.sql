@@ -46,24 +46,3 @@ show table status like 'members';
 # Index_length: 49152 Byte
 
 # cf) MySQL(InnoDB 엔진)의 기본 인덱스 페이지 크기
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

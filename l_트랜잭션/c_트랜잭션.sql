@@ -4,7 +4,7 @@
 	사원이 회원가입 - 대기 중 
     인사 관리자가 회원가입 승인 - 대기 중 상태 > 승인 상태로 변경 
 	회원가입 전체 완료 
-
+    
 	@Override
     @Transactional
     public ResponseDto<EmployeeSignUpApprovalsResponseDto> updateApproval(Long EmployeeId, EmployeeSignUpApprovalRequestDto dto, String loginId) {

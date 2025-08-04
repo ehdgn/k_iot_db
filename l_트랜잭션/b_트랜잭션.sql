@@ -72,27 +72,3 @@ commit;
 select * from users;
 select * from user_settings; ### step1 위치로 이동하기 때문에 사용자 설정은 기록에 남지 않음
 select * from logs;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

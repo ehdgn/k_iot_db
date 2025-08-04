@@ -207,16 +207,3 @@ select * from transaction_log;
 
 # if 조건문을 벗어나면 실행된(이체된 내역) ROLLBACK(취소)
 # > 잔고가 10000원 이상이 아닌 경우
-
-
-
-
-
-
-
-
-
-
-
-
-
